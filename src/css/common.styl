@@ -1,0 +1,114 @@
+$ColorOrange = #ff6700
+$ColorWrite = #fff
+$ColorGray = #b0b0b0
+$ColorGray1 = #e0e0e0
+$ColorGray2 = #616161
+$ColorGray3 = #f3f3f3
+$ColorGray4 = #868686
+$ColorRed = #ef3a3b
+
+
+$transitionTime = all .3s
+$transitionTime1 = all .6s
+$transitionTime2 = all 1s
+
+body
+  font-family "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif
+  background-color: #fff
+  min-width: 1226px
+
+.container
+  width: 1226px
+  margin-right: auto
+  margin-left: auto
+
+.fl
+  float: left
+
+.fr
+  float: right
+
+.clearfix:after
+  content ''
+  display block
+  height: 0
+  clear: both
+  visibility: hidden
+
+.clearfix
+  zoom: 1
+  
+.hide
+  display none !important
+  
+.show
+  display: block !important
+
+
+.new-flag
+  position: absolute
+  top: 0
+  left: 50%
+  width: 64px
+  height: 20px
+  margin-left: -32px
+  line-height: 20px
+  text-align: center
+  background $ColorRed
+  font-size 12px
+  color $ColorWrite
+
+
+.title
+  font-size 14px
+
+.info-desc
+  width 220px
+  margin: 2px auto 16px
+  font-size 12px
+  color $ColorGray
+  text-overflow ellipsis
+  white-space:nowrap
+  overflow: hidden
+
+.new-price
+  font-size 14px
+  color $ColorOrange
+
+.old-price
+  font-size 14px
+  color $ColorGray
+  text-decoration line-through
+
+
+.last-m-r
+  margin-right: 0 !important
+
+.first-m-b
+  margin-bottom: 14px
+
+.ad
+  width: 1226px
+  height: 120px
+  margin 40px 0
+
+  & > a
+    display block
+
+    & > img
+      width 100%
+      height: 100%
+
+.border-r
+  border-right 1px solid $ColorGray1
+
+.text-index
+  display: block;
+  text-align: left;
+  text-indent: -9999em;
+  overflow: hidden;
+
+.active-b-c
+  background $ColorWrite !important
+  color: $ColorOrange !important
+

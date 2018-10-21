@@ -1,0 +1,1015 @@
+@import "./common.styl"
+
+
+.top-ad
+  width: 100%
+  height: 120px
+  background url("../images/topBanner.jpg") center no-repeat
+
+  & > a
+    display block
+    height: 100%
+
+.top-bar
+  width: 100%
+  height: 40px
+  background #333
+  color: $ColorGray
+  font-size 12px
+  
+  span
+    color: #424242;
+    margin 0 .5em
+
+  a
+    color: $ColorGray
+
+  .top-bar-nav, .top-bar-info
+    height: 40px
+    line-height: 40px
+
+  .top-bar-nav > ul li, .top-bar-info > ul li
+    float left
+
+    & > a:hover
+      color: $ColorWrite
+
+  .top-bar-cart
+    position: relative
+    width: 120px
+    height: 40px
+    margin-left: 15px
+
+    .top-bar-cart-content
+      display block
+      height: 40px
+      line-height: 40px
+      text-align center
+      vertical-align top
+      background #424242
+
+      & > i
+        vertical-align -2px
+
+    .top-bar-cart-menu
+      display none
+      position: absolute
+      top 40px
+      right: 0
+      width: 316px
+      padding: 15px 0
+      z-index: 99
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15)
+      transition $transitionTime1
+      background $ColorWrite
+
+      .loading
+        padding 20px 0
+        text-align center
+
+.header-nav-container
+  width: 100%
+  height: 100px
+  position: relative
+
+  & > .container
+    position: relative
+
+    .header-logo
+      width: 235px
+      height: 55px
+      margin-top: 22px
+
+      & > .logo
+        display inline-block
+        width: 55px
+        height: 100%
+        background $ColorOrange
+        text-indent -9999em
+        overflow: hidden
+
+      .logo:before
+        content ''
+        display block
+        width: 55px
+        height: 55px
+        background url("../images/mi-logo.png") 50% 50% no-repeat
+
+      .logo-2
+        position: absolute
+        display block
+        width: 165px
+        height: 55px
+        top 15px
+        left 70px
+        text-indent -9999px
+        overflow: hidden
+
+        &:before
+          content ''
+          display block
+          width: 165px
+          height: 55px
+          background url("../images/chongyangjie.jpg") 0 0 no-repeat
+
+    .header-nav
+      height: 100px
+      font-size 16px
+
+      & > ul li
+        float left
+        height: 100px
+        line-height: 100px
+
+        & > a
+          display block
+          padding 0 10px
+
+          &:hover
+            color $ColorOrange
+    .header-search
+      width: 298px
+      height: 50px
+      margin-top: 25px
+      font-size 0
+      color $ColorGray2
+      position: relative
+
+      .header-search-form
+        .search-content
+          width: 223px
+          height: 48px
+          padding 0 10px
+          border 1px solid $ColorGray1
+          font-size 18px
+          transition $transitionTime
+
+        .search-submit
+          width: 52px
+          height: 50px
+          border-top 1px solid $ColorGray1
+          border-bottom 1px solid $ColorGray1
+          border-right 1px solid $ColorGray1
+          background  $ColorWrite
+          font-size 18px
+          cursor pointer
+          transition $transitionTime
+
+          &:hover
+            background $ColorOrange
+            color $ColorWrite
+
+        .search-default
+          position: absolute
+          top 15px
+          right 62px
+
+          & > a
+            display inline-block
+            padding 1px 5px
+            margin-right 6px
+            font-size 12px
+            background #f1f1f1
+            color $ColorGray2
+            transition $transitionTime
+
+            &:last-child
+              margin-right: 0
+
+            &:hover
+              background $ColorOrange
+              color $ColorWrite
+
+      .search-focus-list
+        display: none
+        width: 243px
+        position: absolute
+        top 50px
+        left 0
+        border-left 1px solid $ColorOrange
+        border-bottom 1px solid $ColorOrange
+        border-right 1px solid $ColorOrange
+        background $ColorWrite
+        font-size 12px
+
+        & li
+          height: 30px
+          line-height: 30px
+          padding 0 15px
+
+          &:hover
+            background $ColorGray3
+
+          & > a
+            display block
+
+            .item-count
+              float right
+              color $ColorGray
+
+  .header-nav-menu
+    display none
+    width 100%
+    position: absolute
+    top: 99px
+    left: 0
+    height: 229px
+    //visibility:hidden;
+    z-Index: 99
+    padding-bottom: 30px
+    overflow: hidden
+    background $ColorWrite
+    box-shadow 0 6px 10px $ColorGray1
+    border-top 1px solid $ColorGray1
+
+    & ul > li
+      position: relative
+      float: left
+      width: 16.6%
+      text-align center
+
+      &:last-child > .header-nav-menu-img > a
+        border-right none
+
+      .header-nav-menu-label
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        text-align center
+
+        & > .label
+          display inline-block
+          padding 1px 16px
+          border 1px solid $ColorOrange
+          color $ColorOrange
+
+      .header-nav-menu-img
+        margin 40px 0 20px
+
+        & > a
+          display block
+          text-align center
+          border-right 1px solid $ColorGray1
+
+
+          & > img
+            width: 160px
+            height: 110px
+
+      .header-nav-menu-text > .price
+        color $ColorOrange
+.banner-container
+  position: relative
+  width: 1226px
+  height: 460px
+  font-size 14px
+  margin-bottom: 210px
+
+  .banner
+    width: 100%
+    height: 100%
+    overflow: hidden
+
+    & > ul
+      height: 460px
+    & > ul > li
+      position: absolute
+      top 0
+      left: 0
+
+      & > a > img
+        width: 1226px
+        height: 460px
+
+    & > ol
+      position: absolute
+      bottom 25px
+      right 30px
+      z-index 50
+
+      & > li
+        float: left
+        width: 6px
+        height: 6px
+        border 2px solid $ColorGray
+        border-radius 50%
+        background $ColorGray4
+        margin-right 10px
+        cursor pointer
+        transition $transitionTime
+
+        &:hover
+          background  $ColorWrite
+
+      .banner-active
+        background  $ColorWrite
+
+    .banner-left, .banner-right
+      position: absolute
+      width: 41px
+      height: 69px
+      top 50%
+      margin-top: -35px
+      line-height: 69px
+      text-align: center
+      font-size 30px
+      color $ColorGray1
+      transition $transitionTime
+      z-index: 50
+
+      &:hover
+        background rgba(0, 0, 0, .6)
+        color: $ColorWrite
+
+    .banner-left
+      left: 234px
+
+    .banner-right
+      right 0
+  .banner-list
+    width: 234px
+    height: 460px
+    position: absolute
+    top: 0
+    left: 0
+    background rgba(0, 0, 0, .6)
+    z-index: 50
+
+    & > ul
+      padding 20px 0
+
+      & > li
+        width: 234px
+        height: 42px
+        line-height: 42px
+
+        &:hover
+          background $ColorOrange
+          & > a > i
+            color $ColorWrite
+
+        & > a
+          position: relative
+          display block
+          margin-left: 30px
+          color $ColorWrite
+
+          & > i
+            position: absolute
+            top: 0
+            right 20px
+            font-size 12px
+            color $ColorGray
+            font-weight: 700
+
+
+        & > .banner-list-menu
+          display: none
+          height 460px
+          position absolute
+          top: 0
+          left: 234px
+          background $ColorWrite
+          box-shadow 3px 6px 10px $ColorGray
+
+          .banner-list-menu-col
+            float left
+            width: 248px
+            height: 460px
+
+            & > li
+              width: 100%
+              height: 16.6%
+
+              & > a
+                display block
+                padding 18px 20px
+
+                &:hover
+                  color $ColorOrange
+
+                & > img
+                  width: 40px
+                  height: 40px
+                  margin-right: 15px
+
+        .children-col-1
+          width 248px
+
+        .children-col-2
+          width 496px
+
+        .children-col-3
+          width 744px
+
+        .children-col-4
+          width 992px
+  .banner-small
+    width: 1226px
+    height: 170px
+    margin: 20px 0
+
+    .banner-small-channel
+      width: 234px
+      margin-right: 14px
+      background #5f5750
+
+      & > ul > li
+        float left
+        width: 78px
+        height: 85px
+        position: relative
+
+        & > a
+          display block
+          text-align center
+          font-size 12px
+          padding-top 24px
+          color $ColorGray1
+
+          &:hover
+            color $ColorWrite
+
+          & > p
+            margin-bottom: 10px
+            font-size 30px
+    .banner-small-list
+      & > ul > li
+        width: 316px
+        height: 170px
+        float: left
+        margin-right: 15px
+        transition $transitionTime
+
+        &:hover
+          box-shadow 2px 12px 20px $ColorGray1
+
+
+        & > a > img
+          width: 316px
+          height: 170px
+
+.flash-purchase-head
+    position: relative
+    height: 58px
+    line-height: 58px
+    font-size 22px
+    color #333
+
+    .more
+      position: absolute
+      bottom: 0
+      right: 0
+
+      & > a
+        width: 24px
+        height: 16px
+        line-height: 16px
+        padding: 5px 10px
+        border 1px solid $ColorGray1
+        font-size 12px
+        font-weight 700
+        color $ColorGray2
+        &:last-child
+          border-left none
+
+        &:hover
+          color $ColorOrange
+  .flash-purchase-body
+    width: 1226px
+    height: 340px
+    overflow: hidden
+    position: relative
+
+    .body-count-down-wrap
+      width: 234px
+      height: 340px
+      margin-right: 14px
+      text-align: center
+      background #f1eded
+      .body-count-down
+        padding-top: 60px
+        border-top 1px solid $ColorRed
+        font-size 14px
+        .body-count-down-tit
+          font-size 20px
+          color $ColorRed
+
+        & > img
+          margin: 25px 0
+
+        .body-count-down-time
+          width: 168px
+          margin: 26px auto
+          font-size 24px
+
+          & > div
+            float left
+            text-align: center
+            height: 46px
+            line-height 46px
+
+          .box-time
+            width: 46px
+            background $ColorGray2
+            color $ColorWrite
+          .box-desc
+            width: 15px
+    .flash-purchase-content
+      position: absolute
+      top: 0
+      left: 248px
+      width: 978px
+      overflow: hidden
+
+      & > ul
+
+        & > li
+          width: 234px
+          height: 339px
+          float: left
+          margin-right: 14px
+          border-top-width 1px
+          border-top-style solid
+          border-top-color $ColorOrange
+          background $ColorGray3
+          position: relative
+          text-align: center
+
+          & > .content > a
+            display block
+
+          .content-img
+            width: 160px
+            height: 160px
+            margin: 40px 0 20px
+
+
+.module-container
+  background: $ColorGray3
+  padding: 30px 0
+  .phone-container-head
+    position: relative
+    height: 58px
+    line-height: 58px
+    font-size 22px
+    color #333
+
+    & > .more
+      position: absolute
+      bottom: 0
+      right: 0
+      font-size 16px
+
+      & > a
+        display block
+        transition $transitionTime
+
+        &:hover
+          color $ColorOrange
+          & > i
+            color $ColorWrite
+            background $ColorOrange
+
+        & > i
+          padding 4px
+          background $ColorGray
+          border-radius 50%
+          margin-left 8px
+          font-size 16px
+          color $ColorGray3
+
+
+
+
+  .phone-container-content
+    width: 1226px
+    & > ul > li
+      transition $transitionTime
+      &:hover
+        box-shadow 2px 8px 20px $ColorGray1
+        transform translateY(-4px)
+    .content-banner
+      width: 234px
+      height: 614px
+      & img
+        width: 100%
+        height: 100%
+    .content-body
+      width: 992px
+      & > li
+        width: 234px
+        height: 300px
+        text-align: center
+        position: relative
+        background $ColorWrite
+        margin: 0 0 14px 14px
+        float: left
+        overflow: hidden
+
+        &:hover
+          & .pop-up-wrap
+            height 80px
+
+        & > a
+          display block
+          & > img
+            width: 160px
+            height: 160px
+            margin: 20px 0
+            
+  .home > .phone-container-head li
+    float: left
+    font-size 16px
+    margin-left: 35px
+
+    & > a
+      padding-bottom: 4px
+      transition all .1s  linear
+
+      &.active
+        border-bottom 2px solid $ColorOrange
+        color $ColorOrange
+
+
+  .home > .phone-container-content > ul > li
+    width: 234px
+    height: 300px
+
+  .home > .phone-container-content > .content-body > .content-body
+    display none
+
+  .home > .phone-container-content > .content-body > ul > li
+      transition $transitionTime
+      &:hover
+        box-shadow 2px 8px 20px $ColorGray1
+        transform translateY(-4px)
+  .home  > .phone-container-content > .content-body > ul > .content-ul-two
+    width: 234px
+    height: 143px
+    text-align: left
+
+    & > div
+      display inline-block
+    & > .more .title
+      font-size 20px
+      color #000
+    & > .content-more a
+      font-size 45px
+      font-weight 700
+      color $ColorOrange
+
+    & > .content-text
+      margin: 45px 25px 45px 30px
+
+      & > .title
+        margin-bottom: 10px
+
+    & > .content-img img
+      margin-top: -28px
+
+
+.pop-up-wrap
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 234px
+  height: 0
+  transition $transitionTime
+  transform translate3d(0,0,0)
+
+  & > a
+    display block
+    background $ColorOrange
+    padding: 14px 30px
+    text-align: left
+    color $ColorWrite
+
+    & .pop-up-wrap-from
+      margin-top: 5px
+      color rgba(255,255,255,0.6)
+
+.recommend .flash-purchase-body ul
+  width: 2500px
+
+  & > li
+    background $ColorWrite
+    height: 300px
+    border-top none
+    transition $transitionTime
+
+    &:hover
+      box-shadow 2px 8px 20px $ColorGray1
+      transform translateY(-4px)
+
+    & img.content-img
+      margin: 20px
+
+.recommend .flash-purchase-content
+    position: static
+.recommend .recommend-content
+  width: 1226px
+
+.hot-item
+  .item-list
+    width: 1226px
+    height: 416px
+    & > ul > li
+      width: 296px
+      height: 416px
+      float: left
+      margin-right: 14px
+      background $ColorWrite
+      transition $transitionTime
+
+      &:hover
+        box-shadow 2px 8px 20px $ColorGray1
+        transform translateY(-4px)
+
+      & a
+        display block
+
+        & > img
+          width: 296px
+          height: 220px
+
+      .content > a
+        padding: 24px
+
+        .info
+          width: 248px
+          height: 74px
+          margin-bottom: 20px
+          font-size 14px
+          line-height: 25px
+
+        .info-desc
+          margin-left: 0
+
+        .hot-item-title
+          display inline-block
+          max-width: 170px
+          padding-right: 8px
+          margin-right: 8px
+          border-right 1px solid $ColorGray
+          text-overflow ellipsis
+          overflow: hidden
+          white-space nowrap
+          vertical-align: bottom
+
+.module-content
+  padding: 20px 0
+.module-content .item-list > ul > li
+  position: relative
+  height: 374px
+  padding-top: 45px
+  overflow: hidden
+  border-top 1px solid $ColorOrange
+
+  &:hover
+    & > .control a
+      background rgba(0,0,0,.4)
+      color $ColorGray3
+      opacity 1
+
+  & > .title
+    font-size 16px
+    color $ColorOrange
+    text-align: center
+
+  .module-content-body-ul
+
+    
+    & > li
+      float: left
+      width: 296px
+      height: 340px
+      margin-top: 20px
+      text-align: center
+      background $ColorWrite
+
+      & > h2
+        font-size 20px
+        color #000
+        line-height: 40px
+
+      & .info-desc
+        height: 40px
+        white-space normal
+        & > a
+          display block
+          color $ColorGray
+      & .price a
+        height: 18px
+        font-size 16px
+      & img
+        width: 200px
+        height: 142px
+        margin-top: 20px
+
+
+
+  & > .control
+    width: 100%
+    position: absolute
+    top: 44%
+    font-weight:700
+
+    & a
+      width: 20px
+      height: 24px
+      padding: 12px 0
+      line-height: 24px
+      font-size 18px
+      text-align: center
+      opacity 0
+      transition all .6s
+    & .control-next
+      position: absolute
+      right: 0
+      top 0
+  & > .pagers-wrapper
+    position: absolute
+    bottom 10px
+    left: 50%
+    margin-left: -45px
+
+    & > ol li
+      float: left
+      padding 12px
+      height: 10px
+      line-height: 10px
+      cursor: pointer
+      &:hover
+        & span
+          background $ColorOrange
+
+      span
+        display inline-block
+        width: 6px
+        height: 6px
+        line-height: 6px
+        border-radius 50%
+        background $ColorGray4
+        vertical-align middle
+
+      .module-content-active
+        background $ColorWrite
+        border 2px solid $ColorOrange
+
+.home-bar
+  z-index 99
+  ul
+    position: fixed
+    bottom: 100px
+    right: 0
+    width: 84px
+    li.home-bar-to-top
+      visibility hidden
+      margin-top: 15px
+    li
+      width: 82px
+      height: 90px
+      border 1px solid #f5f5f5
+      border-top none
+      background $ColorWrite
+      text-align center
+      font-size: 14px
+      a
+        display block
+        color $ColorGray4
+
+      img
+        width: 30px
+        height: 30px
+        padding: 15px 0 10px
+
+    .home-bar-img-1:hover
+      a
+        color $ColorOrange
+    .home-bar-img-2:hover
+      a
+        color $ColorOrange
+    .home-bar-img-3:hover
+      a
+        color $ColorOrange
+    .home-bar-img-4:hover
+      a
+        color $ColorOrange
+
+.video-container
+  margin: 15px 0 30px
+  .video-list li
+    float: left
+    width: 296px
+    height: 285px
+    position: relative
+    margin-right: 14px
+    background $ColorWrite
+    text-align: center
+    transition $transitionTime
+
+    &:hover
+      box-shadow 2px 8px 20px $ColorGray1
+      transform translateY(-4px)
+      & span
+        border-color $ColorOrange
+        background $ColorOrange
+        color $ColorWrite
+
+
+    a
+      display block
+
+      & > span
+        display: block
+        position: absolute
+        bottom: 115px
+        left: 25px
+        width: 24px
+        height: 18px
+        padding: 2px 4px
+        text-align: center
+        line-height: 20px
+        color: $ColorWrite
+        border-radius 12px
+        border 2px solid $ColorWrite
+        background rgba(0, 0, 0, .7)
+        font-size 10px
+        transition $transitionTime
+    img
+      width: 296px
+      height: 180px
+
+    & > .title
+      padding: 30px 0 8px
+
+      &:hover
+        a
+          color $ColorOrange
+
+.footer-container
+  padding-bottom: 30px
+.footer-service
+  height: 25px
+  padding: 27px 0
+  border-bottom 1px solid $ColorGray1
+  li
+    width: 20%
+    height: 25px
+    float: left
+    text-align: center
+    font-size 16px
+    transition $transitionTime
+    cursor pointer
+    &:hover
+      color $ColorOrange
+    &:last-child
+      p
+        border-right none
+    p
+      border-right: 1px solid $ColorGray1
+    .footer-icon
+      font-size 26px
+      margin-right: 8px
+      vertical-align: middle
+.footer-links
+  margin: 40px 0
+  .col-links
+    width: 163px
+    float: left
+    dt
+      margin-bottom: 25px
+      font-size 14px
+    dd
+      padding: 5px 0
+      color $ColorGray4
+      cursor pointer
+      &:hover
+        color $ColorOrange
+  .footer-service-tel
+    width: 247px
+    text-align: center
+    .tel
+      margin: 10px 0
+      font-size 22px
+      color $ColorOrange
+    a
+      display inline-block
+      width: 118px
+      height: 28px
+      margin-top: 20px
+      font-size: 12px
+      line-height: 28px
+      text-align: center
+      color $ColorOrange
+      border 1px solid $ColorOrange
+      transition $transitionTime
+      &:hover
+        background: $ColorOrange
+        color $ColorWrite
+.slogan
+  height: 30px
+  background url("../images/slogan2016.png") center no-repeat
+
